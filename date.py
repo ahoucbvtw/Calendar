@@ -83,7 +83,9 @@ class Main(object):
 		self.window.geometry("210x330+800+250") #視窗解析度 (x*y+視窗欲固定的畫面位置X+視窗欲固定的畫面位置Y)
 		self.window.resizable(0,0)#不可以更改大⼩
 		Font = tkfont.Font(family = "新細明體", size = 10, weight = "bold")
+
 #Function1:第N天後日期=============================================================================================================================#
+
 		frame1 = LabelFrame(self.window, text = "第N天後日期", font = Font)
 		frame1.place(x = 25, y = 15)
 
@@ -101,7 +103,9 @@ class Main(object):
 
 		answer1 = Label(frame1, font = Font)
 		answer1.grid(row = 2, column = 1, padx = 5, pady = 5)
+
 #Function2:日期相差=============================================================================================================================#
+
 		frame2 = LabelFrame(self.window, text = "日期相差", font = Font)
 		frame2.place(x = 25, y = 150)
 
