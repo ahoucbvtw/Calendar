@@ -21,7 +21,7 @@ class Main(object):
 
 		def futuredate():
 			entryvalue = inputdays.get()
-			try:
+			try: #利用將輸入字串轉換成數字int型式判斷是否輸入為數字
 				d = int(entryvalue)
 
 			except ValueError:
@@ -46,7 +46,7 @@ class Main(object):
 			day1entryvalue = inputday1.get()
 			day2entryvalue = inputday2.get()
 
-			try:
+			try: #利用將輸入字串轉換成數字int型式判斷是否輸入為數字
 				d1year = int(year1entryvalue)
 				d1month = int(mounth1entryvalue)
 				d1day = int(day1entryvalue)
@@ -65,7 +65,7 @@ class Main(object):
 					messagebox.showwarning("Error","年份請勿輸入超過4位數！！")
 					inputyear2.delete(0, END)
 				else:
-					try:
+					try: #利用將輸入的年月日放入datatime.date函式裡判斷輸入值是否為正確的年月日型式
 						d1 = datetime.date( d1year, d1month, d1day)
 						d2 = datetime.date( d2year, d2month, d2day)
 					except ValueError:
