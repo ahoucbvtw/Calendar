@@ -1,4 +1,4 @@
 # Calendar
-The simple for two function's date count
+The simple for two functions date count
 
 Only for Traditional Chinese
